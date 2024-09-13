@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MeetingApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeetingApp.Controllers
@@ -10,13 +11,20 @@ namespace MeetingApp.Controllers
     {
         public IActionResult Index(){
             int saat = DateTime.Now.Hour;
-            // ViewBag.Selamlama = saat > 12 ? "Iyi gunler" : "Gunaydin";
-            // ViewBag.UserName = "Kaan";
 
             ViewData["Selamlama"] = saat > 12 ? "Iyi gunler" : "Gunaydin";
             ViewData["UserName"] = "Kaan";
 
-            return View();
+            var meetingInfo = new MeetingInfo()
+            {
+                Id = 1,
+                Location = "Istanbul, Abc Kongre Merkezi",
+                Date = new DateTime(2024, 01, 20, 20, 0, 0),
+                NumberOfPeople = 100
+            };
+
+
+            return View(meetingInfo);
         }
     }
 }
