@@ -11,6 +11,7 @@ namespace MeetingApp.Controllers
     {
         public IActionResult Index()
         {
+            int UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
             int saat = DateTime.Now.Hour;
 
             ViewData["Selamlama"] = saat > 12 ? "Iyi gunler" : "Gunaydin";
@@ -20,7 +21,7 @@ namespace MeetingApp.Controllers
                 Id = 1,
                 Location = "Istanbul, Abc Kongre Merkezi",
                 Date = new DateTime(2024, 01, 20, 20, 0, 0),
-                NumberOfPeople = 100
+                NumberOfPeople = UserCount
             };
 
 
