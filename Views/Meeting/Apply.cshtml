@@ -1,7 +1,26 @@
 @{
-    ViewBag.Title = "Toplanti Basvuru";
+ViewBag.Title = "Toplanti Basvuru";
 }
-<h1 class="h4">Toplanti katilim formu</h1>
+<h1 class="h4 text-center">Toplanti katilim formu</h1>
 <form action="">
+    <div class="mb-3">
+        <label for="Name">Isim Soyisim</label>
+        <input type="text" name="Name" id="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Phone">Telefon</label>
+        <input type="text" name="Name" id="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Email">Eposta</label>
+        <input type="email" name="Email" id="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="WillAttend">Katilim Durumu</label>
+        <select name="WillAttend" id="WillAttend" class="form-select">
+            <option value="true">Evet, Katilacagim</option>
+            <option value="false">Hayir, Katilmayacagim</option>
+        </select>
+    </div>
     <button class="btn btn-primary" type="submit">Kaydet</button>
 </form>
