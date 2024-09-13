@@ -1,6 +1,8 @@
+@model string
 @{
+    ViewBag.Title = "Bavuru Formu";
     Layout = "_Layout2";
 }
-<h1 class="h4">Merhaba</h1>
+<h1 class="h4">@ViewData["Selamlama"], @ViewData["UserName"]</h1>
 <p>Toplanti katilim durumunuzu buldiriniz</p>
 <a class="btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply">Basvuru yap</a>
