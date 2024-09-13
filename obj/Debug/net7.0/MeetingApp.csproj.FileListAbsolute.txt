@@ -24,3 +24,5 @@
 /Users/kaansahin/DesktopExtras/aspnetcore-dersleri/MeetingApp/obj/Debug/net7.0/MeetingApp.pdb
 /Users/kaansahin/DesktopExtras/aspnetcore-dersleri/MeetingApp/obj/Debug/net7.0/MeetingApp.genruntimeconfig.cache
 /Users/kaansahin/DesktopExtras/aspnetcore-dersleri/MeetingApp/obj/Debug/net7.0/ref/MeetingApp.dll
+/Users/kaansahin/DesktopExtras/aspnetcore-dersleri/MeetingApp/obj/Debug/net7.0/MeetingApp.RazorAssemblyInfo.cache
+/Users/kaansahin/DesktopExtras/aspnetcore-dersleri/MeetingApp/obj/Debug/net7.0/MeetingApp.RazorAssemblyInfo.cs
